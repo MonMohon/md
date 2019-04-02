@@ -1,0 +1,100 @@
+    :root {
+      --primary-color: #282e85;  
+      --secondary-color: #cf1a3e;
+      --offset-color: #00a651;  
+    }
+    html,body{background-color: var(--primary-color);color: #fff}
+    .txt-primary{color: var(--secondary-color);}
+    .txt-secondary{color: var(--secondary-color);}
+    h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+        font-family: 'Montserrat', sans-serif;
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+        line-height: 1.2;
+        color: #eee;
+        margin-top: 0;
+    }
+    p{color: #fff}
+    h6, .h6 {font-size: 0.875rem;}
+    .position-relative{position: relative}
+    .position-absolute {position: absolute !important;}
+    .z-index-n9 {z-index: -9;position: relative;}
+    .top-0 {top: 0;}
+    .right-0 {right: 0;}
+    .display-6 {font-size: 2rem;}
+
+    .logo{ height: 150px;}
+    .logo img{ height: 100%; width: auto; } 
+    .fill-grad-start {stop-color: #dddeff;}
+    .fill-grad-end {stop-color: #ecedfe;}
+    .m-headline{color: #fff;text-transform: uppercase;font-weight: 700}
+    .datenum{font-weight: bold;color: var(--offset-color);}
+    .datetxt{padding-right: 10px;text-align: left;}
+
+    .footer{color: #fff;width: 100%}
+    .footer{margin: 0;padding: 0}
+    .footer li{float: left;width: 25%;text-align: center;list-style: none}
+    .footer li a{color: #f0f0f0;text-decoration: none;}
+    .footer li a:hover{color: #fff;text-decoration: none}
+    .mp{padding-left: 0;padding-right: 0}
+    .ov{overflow-y: hidden;position: relative}
+
+    .cards{
+        margin: 3rem 135px;height: calc(100vh - 6rem);border-radius: 15px;}
+    .d-md-block{padding-left: 250px}
+    .calcalutor{margin-top: 150px}
+.calcalutor {
+    height: 600px;
+    margin: 20px;
+}
+@media (min-width: 1024px) {
+    .display-xl-4 {font-size: 3.5rem;}
+    .d-lg-block {display: block !important;}
+    .datenum{font-size: 42px;}
+    footer{padding: 44px 25px}
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 800px) and (max-width: 1280px) and (orientation: landscape) {
+    .logo {height: 100px;margin-top: 20px}
+    #countdown{margin-bottom: 150px}
+    .display-xl-4 {font-size: 2.5rem;}
+    .full-height {height: 100%;}
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  //CSS
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .logo {height: 100px;margin-top: 25px}
+    .mp{padding-left: 20px;}
+    .datenum{font-size: 36px;}
+    footer{padding: 36px 25px;margin-top: 80px}
+    .footer li{width: 50%;text-align: left}
+    .footer li a{display: list-item}
+    .pb-5{padding-bottom:.7rem !important}
+    .d-md-block{padding-left: 0}
+    .cards {margin: 10px;height: auto;}
+    .calcalutor {
+        margin-top: 0;
+        height: 200px;
+        margin: 20px;
+    }
+}
