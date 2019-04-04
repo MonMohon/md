@@ -3,7 +3,7 @@
       --secondary-color: #cf1a3e;
       --offset-color: #00a651;  
     }
-    html,body{background-color: var(--primary-color);color: #fff}
+    html,body{background-color: #000949;color: #fff}
     .txt-primary{color: var(--secondary-color);}
     .txt-secondary{color: var(--secondary-color);}
     h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
