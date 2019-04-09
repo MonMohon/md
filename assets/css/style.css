@@ -1,7 +1,7 @@
 :root {
     --primary-color: #282e85;  
     --secondary-color: #f58220;
-    --offset-color: #d1193d;  
+    --offset-color: #00a651;  
 }
 .txt-secondary{color: var(--secondary-color);}
 html,body{background-color: #489aff;}
@@ -11,21 +11,20 @@ html,body{background-color: #489aff;}
 .vertical-centred {width: 100%;height: 100%;display: inline-block;vertical-align: middle;white-space: normal;font-size: 1rem;}
 .boxed-inner {position: relative;padding: 0;}
 .boxed {padding-left: 1.7rem;padding-right: 1.7rem;}
-.boxed .container, .boxed .container-fluid {padding: 0;max-width: 100%;}
-.section-bg {position: absolute;left: 0;top: 0;width: 100%;height: 100%;}
+.section-bg {position: absolute;left: 0;top: 0;height: 100vh;width: 100vw;}
 .main-image{position: relative;width: 100%;}
-.svg-main-image {width: 100%;}
-.svg-main-image img {width: 60%;margin-left: 50px;}
+.svg-main-image,.svg-main-image img {width: 100%;}
 .svg-main-image{position: relative;z-index: 333}
-.svg-bg{position: absolute;bottom: 0;z-index: 2;right: 30px;}
-.top-logo{width: 200px;margin: 15px auto 0}
+.svg-main-image img {margin-left: 50px;margin-top: 0;width: 70%}
+.svg-bg{position: absolute;bottom: 30px;z-index: 2;right: 30px;}
+.top-logo{width: 100px;margin: 15px auto 0}
 .top-logo img,.logo img{width: 100%}
-.subtitle-top{color: #fff;text-transform: uppercase;font-weight: 700;margin-top: 50px}
+.subtitle-top{color: var(--primary-color);text-transform: uppercase;font-weight: 700;margin-top:20px}
 .subtitle-top .letter {display: inline-block;line-height: 1em;}
 .datenum{font-weight: bold;color: var(--offset-color);}
 .datetxt{padding-right: 10px;text-align: left;}
 #gear{animation:spin 4s linear infinite;transform-origin: 50% 50%;}
-.footer-link {background-color: var(--primary-color);color:#fff;width: 100%;position: absolute;bottom: 0}
+.footer-link {background-color: var(--primary-color);width: 100%;position: absolute;bottom: -60px}
 .footer-link .footer{margin: 0;padding: 0;list-style: none}
 .footer-link li a{color: #ccc;text-decoration: none;}
 .footer-link li a:hover{color: #fff;text-decoration: none}
@@ -67,47 +66,30 @@ html,body{background-color: #489aff;}
 }
 .fill-grad-start {stop-color: #dddeff;}
 .fill-grad-end {stop-color: #ecedfe;}
-h5,.h5,p{color: #fff}
 .vertical-centred {padding-top: 0;padding-bottom: 5rem;}
 .logo{width: 120px;margin-top:2rem}
 .svg-bg{width: 70px}
-.display-xl-4 {font-size: 2rem;}
+.display-xl-4 {font-size: 1.2rem;}
 .datenum{font-size: 24px;}
 .mt-5 {margin-top: 1.5rem!important;}
 .mb-5 {margin-bottom:1rem!important;}
-#countdown {margin-bottom: 10px;color: #fff}          
+#countdown {margin-bottom: 10px;}          
 .footer-link{padding: 10px 25px;}
 .footer-link li{width: 50%;text-align: left;float: left}
 .footer-link li a{display: list-item}
 
 @media (min-width: 768px){
     .boxed {padding-left: 3rem;padding-right: 3rem;}
-    .vertical-centred {padding-top: 10rem;padding-bottom: 11rem;}
+    .vertical-centred {padding-top: 3rem;padding-bottom: 3rem;}
+    .subtitle-top{margin-top: 50px}
     .svg-bg{width: 200px}
     .logo{width: 250px;margin-top: 0}
-    .display-xl-4 {font-size: 3.5rem;}
+    .display-xl-4 {font-size: 2rem;}
     .mt-5 {margin-top: 3rem!important;}
     .datenum{font-size: 42px;}
-    .svg-main-image img {margin-left: 0;}
-    .svg-bg{position: absolute;bottom: 50px;z-index: 2;right: 300px;}
-}
-@media (min-width: 992px){
-    .boxed {padding-left: 6rem;padding-right: 6rem;}
-    .vertical-centred {padding-top: 10rem;padding-bottom: 10rem;}
-    .main-image{width: 100%}
-    .display-xl-4 {font-size: 3.5rem;}
-    .mt-5 {margin-top: 2rem!important;}
+    .svg-main-image svg {margin-left: 0;margin-top: 30px}
+    .svg-bg{bottom: 0;z-index: 2;right: 0;}
+    .footer-link{bottom: 0;}
     .footer-link li{width: 25%;text-align: left;float: left}
-    #countdown {margin-bottom: 50px;}
-}
-
-@media (min-width: 1440px){
-    .main-image{width: 100%}
-    .mt-5 {margin-top: 3rem!important;}
-    .footer-link li a{display:inline-block}
-    .mb-5 {margin-bottom: 3rem!important;}
-    .footer-link{padding: 40px 25px;}
-    .logo {margin: 50px 0;}
-    .vertical-centred {padding-top: 5rem;padding-bottom: 5rem;}
-    .datenum{font-size: 52px;
+    .footer-link li a{display: inline-block}
 }
