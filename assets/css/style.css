@@ -24,10 +24,16 @@ html,body{background-color: #489aff;}
 .datenum{font-weight: bold;color: var(--offset-color);}
 .datetxt{padding-right: 10px;text-align: left;}
 #gear{animation:spin 4s linear infinite;transform-origin: 50% 50%;}
-.footer-link {background-color: var(--primary-color);width: 100%;position: absolute;bottom: -60px}
+.footer-link {background-color: var(--primary-color);width: 100%;position: absolute;}
 .footer-link .footer{margin: 0;padding: 0;list-style: none}
 .footer-link li a{color: #ccc;text-decoration: none;}
 .footer-link li a:hover{color: #fff;text-decoration: none}
+.m-footer{color: var(--primary-color);width: 100%;position: relative;padding: 10px 25px;}
+.m-footer li{width: 50%;text-align: left;float: left}
+.m-footer li a{display: list-item;color: #ccc;text-decoration: none;}
+.m-footer .footer{margin: 0;padding: 0;list-style: none}
+.m-footer li a:hover{color: #fff;text-decoration: none}
+
 @keyframes spin {0% {transform: rotate(0deg);}100% {transform: rotate(360deg);}}
 .bounce { -webkit-animation-name: bounce;animation-name: bounce;animation-duration: 2.5s;animation-fill-mode: both;animation-timing-function: linear;animation-iteration-count: infinite;}
 @keyframes bounce { 0%, 20%, 40%, 60%, 80%, 100% {transform: translateY(0);}50% {transform: translateY(-5px);}}
